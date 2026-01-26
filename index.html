@@ -5,96 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zixi Zhou</title>
   <meta name="description" content="Zixi Zhou — personal academic homepage." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">Zixi Zhou</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="files/CV.pdf" target="_blank" rel="noopener">CV</a>
-      </nav>
+  <div class="container">
+    <div class="topnav">
+      <a href="index.html"><b>Home</b></a> /
+      <a href="research.html">Research</a> /
+      <a href="talks.html">Talks</a> /
+      <a href="teaching.html">Teaching</a> /
+      <a href="misc.html">Miscellanea</a>
     </div>
-  </header>
+    <hr class="rule" />
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h1>Zixi Zhou</h1>
-          <p class="subtitle">Master of Economics (M.Econ) Student · Duke University</p>
+    <div class="intro">
+      <div>
+        <h1>Zixi Zhou</h1>
+        <p class="affil">Master of Economics (M.Econ) Student · Duke University</p>
 
-          <p class="lead">
-            I work on econometrics, with a current focus on panel quantile regression and inference under multi-way fixed effects.
-          </p>
-
-          <div class="links">
-            <a href="https://github.com/zzxzhou" target="_blank" rel="noopener">GitHub</a>
-            <span class="sep">·</span>
-            <a href="mailto:zixi.zhou@duke.edu">Email</a>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <img class="avatar" src="assets/img/avatar.jpg" alt="Portrait" />
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
         <p>
-          I am a Master of Economics student at Duke University (2025–2027). I received a B.Econ in Finance from Dongbei University of Finance and Economics (2021–2025, GPA 3.80/4.00) and attended the Shanghai Jiao Tong University Summer School (2023), with coursework in Statistical Inference and Introduction to Statistical Learning.
+          I work on econometrics, with a current focus on panel quantile regression and inference under multi-way fixed effects.
         </p>
-      </div>
-    </section>
 
-    <section id="research" class="section">
-      <div class="container">
-        <h2>Research</h2>
+        <p class="kv"><b>Email:</b> <a href="mailto:zixi.zhou@duke.edu">zixi.zhou@duke.edu</a></p>
 
-        <div class="pub">
-          <div class="pub-title">Panel Quantile Regression with Heterogeneous Slope Coefficients (Work in progress)</div>
-          <div class="pub-meta">with Yutao Sun · Nov 2023 – Present</div>
-          <div class="pub-links">
-            <a href="#" aria-disabled="true">Working paper coming soon</a>
-          </div>
-          <p class="pub-meta" style="margin-top:10px;">
-            We develop a smoothed panel quantile regression framework with heterogeneous slopes and multi-way fixed effects. Using Conquer-style convolution smoothing with higher-order kernels and data-driven bandwidths, we derive analytical incidental-parameter bias corrections for fixed effects and construct inference procedures that remain valid in panels.
+        <div class="iconrow">
+          <a class="pill" href="https://github.com/zzxzhou" target="_blank" rel="noopener">GitHub</a>
+          <a class="pill" href="#" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="pill" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="pill" href="files/CV.pdf" target="_blank" rel="noopener">CV</a>
+        </div>
+
+        <div class="section">
+          <h2>About</h2>
+          <p>
+            I am a Master of Economics student at Duke University (2025–2027). I received a B.Econ in Finance from Dongbei University of Finance and Economics (2021–2025, GPA 3.80/4.00) and attended the Shanghai Jiao Tong University Summer School (2023), with coursework in Statistical Inference and Introduction to Statistical Learning.
           </p>
         </div>
       </div>
-    </section>
 
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <p>
-          Programming: Python, MATLAB, R, C, LaTeX. Languages: Mandarin (native), English.
-        </p>
+      <div>
+        <img class="avatar" src="assets/img/avatar.jpg" alt="Portrait of Zixi Zhou" />
       </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:zixi.zhou@duke.edu">zixi.zhou@duke.edu</a></p>
-        <p>Alternate: <a href="mailto:zhouzx94@gmail.com">zhouzx94@gmail.com</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div>© <span id="year"></span> Zixi Zhou</div>
     </div>
-  </footer>
+
+    <div class="footer">© <span id="year"></span> Zixi Zhou</div>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
