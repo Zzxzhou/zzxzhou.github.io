@@ -114,9 +114,10 @@ h2{
   margin: 14px 0;
 }
 .item-title{
-  font-family: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 1.25;
 }
 .item-meta{
   color: var(--muted);
