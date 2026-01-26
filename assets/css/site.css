@@ -29,9 +29,10 @@ a:hover{ text-decoration: underline; }
 
 .topnav{
   padding: 18px 0 10px;
-  font-family: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  font-size: 18px;
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 22px;
 }
+.topnav a b{ font-weight: 600; }
 
 .rule{ border:0; border-top:1px solid var(--rule); margin: 0 0 26px; }
 
@@ -59,28 +60,35 @@ h1{
   margin: 10px 0 0;
 }
 .kv b{
-  font-family: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   font-weight: 600;
 }
 
 .iconrow{
   display: flex;
-  gap: 10px;
-  margin-top: 18px;
+  gap: 14px;
+  margin-top: 14px;
   flex-wrap: wrap;
+  align-items: center;
 }
-.pill{
+
+.iconlink{
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid var(--rule);
-  border-radius: 12px;
-  padding: 10px 12px;
-  font-family: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  font-size: 15px;
-  color: #111;
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 20px;
 }
-.pill:hover{ text-decoration: none; border-color:#bfbfbf; }
+
+.iconlink svg{
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.icondot{
+  color: var(--muted);
+}
+
 
 .avatar{
   width: 100%;
