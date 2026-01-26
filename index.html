@@ -15,8 +15,7 @@
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
         <a class="btn" href="files/CV.pdf" target="_blank" rel="noopener">CV</a>
       </nav>
@@ -28,20 +27,16 @@
       <div class="container hero-grid">
         <div class="hero-left">
           <h1>Zixi Zhou</h1>
-          <p class="subtitle">MSc Student · Economics & Psychology · Paris</p>
+          <p class="subtitle">Master of Economics (M.Econ) Student · Duke University</p>
 
           <p class="lead">
-            I work on econometrics / behavioral economics / (your topics).
+            I work on econometrics, with a current focus on panel quantile regression and inference under multi-way fixed effects.
           </p>
 
           <div class="links">
-            <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://github.com/zzxzhou" target="_blank" rel="noopener">GitHub</a>
             <span class="sep">·</span>
-            <a href="#" target="_blank" rel="noopener">GitHub</a>
-            <span class="sep">·</span>
-            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="sep">·</span>
-            <a href="mailto:you@example.com">Email</a>
+            <a href="mailto:zixi.zhou@duke.edu">Email</a>
           </div>
         </div>
 
@@ -54,39 +49,43 @@
     <section id="about" class="section">
       <div class="container">
         <h2>About</h2>
-        <p>Write a short bio here.</p>
+        <p>
+          I am a Master of Economics student at Duke University (2025–2027). I received a B.Econ in Finance from Dongbei University of Finance and Economics (2021–2025, GPA 3.80/4.00) and attended the Shanghai Jiao Tong University Summer School (2023), with coursework in Statistical Inference and Introduction to Statistical Learning.
+        </p>
       </div>
     </section>
 
-    <section id="publications" class="section">
+    <section id="research" class="section">
       <div class="container">
-        <h2>Publications / Working Papers</h2>
+        <h2>Research</h2>
 
         <div class="pub">
-          <div class="pub-title">Paper Title (Working Paper)</div>
-          <div class="pub-meta">Zixi Zhou, Coauthor · 2026</div>
+          <div class="pub-title">Panel Quantile Regression with Heterogeneous Slope Coefficients (Work in progress)</div>
+          <div class="pub-meta">with Yutao Sun · Nov 2023 – Present</div>
           <div class="pub-links">
-            <a href="#" target="_blank" rel="noopener">PDF</a>
-            <span class="sep">·</span>
-            <a href="#" target="_blank" rel="noopener">Code</a>
+            <a href="#" aria-disabled="true">Working paper coming soon</a>
           </div>
+          <p class="pub-meta" style="margin-top:10px;">
+            We develop a smoothed panel quantile regression framework with heterogeneous slopes and multi-way fixed effects. Using Conquer-style convolution smoothing with higher-order kernels and data-driven bandwidths, we derive analytical incidental-parameter bias corrections for fixed effects and construct inference procedures that remain valid in panels.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="Notes" class="section">
+    <section id="skills" class="section">
       <div class="container">
-        <h2>Teaching</h2>
-        <ul class="bullets">
-          <li>Course name — role, term</li>
-        </ul>
+        <h2>Skills</h2>
+        <p>
+          Programming: Python, MATLAB, R, C, LaTeX. Languages: Mandarin (native), English.
+        </p>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>Email: <a href="mailto:zixi.zhou@duke.edu">zixi.zhou@duke.edu</a></p>
+        <p>Alternate: <a href="mailto:zhouzx94@gmail.com">zhouzx94@gmail.com</a></p>
       </div>
     </section>
   </main>
@@ -96,7 +95,7 @@
       <div>© <span id="year"></span> Zixi Zhou</div>
     </div>
   </footer>
-<!-- redeploy -->
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
