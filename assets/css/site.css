@@ -120,8 +120,10 @@ h2{
   line-height: 1.25;
 }
 .item-meta{
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
   color: var(--muted);
   margin-top: 2px;
+  font-size: 18px;
 }
 
 .footer{
