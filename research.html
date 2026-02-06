@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research · Zixi Zhou</title>
   <link rel="stylesheet" href="assets/css/site.css" />
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script async id="MathJax-script"
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <div class="container">
@@ -19,10 +33,15 @@
 
     <div class="item">
       <div class="item-title">Panel Quantile Regression with Heterogeneous Slope Coefficients (Work in progress)</div>
-      <div class="item-meta">with Yutao Sun · Nov 2023 – Present · Working paper coming soon</div>
+      <div class="item-meta">with Yutao Sun · Nov 2023 – Present. Working paper is coming soon</div>
       <p>
-        We develop a smoothed panel quantile regression framework with heterogeneous slopes and multi-way fixed effects. Using Conquer-style convolution smoothing with higher-order kernels and data-driven bandwidths, we derive analytical incidental-parameter bias corrections for fixed effects and construct inference procedures that remain valid in panels.
+        We develop a smoothed panel quantile regression framework with heterogeneous slopes and multi-way fixed effects that accommodates both static and dynamic models. Estimation of individual and time effects induces an incidental-parameter bias, so that the smoothed quantile estimator admits non-negligible $1/T$ and $1/N$ bias components and is not asymptotically centered. Leveraging convolution-based smoothing to obtain differentiable estimating equations, we derive closed-form bias expansions and construct an analytical bias correction that restores centered asymptotic normality for the target parameters. On the computational side, we design dynamic-panel-specific refinements including truncation schemes for dependence control and stabilized score mappings—to enhance robustness and finite-sample performance.
       </p>
+    </div>
+
+    <div class="item">
+      <div class="item-title">Bias Correction for Dynamic Discrete Games with Strategic Heterogeneity (Work in progress)</div>
+      <div class="item-meta">with Qinzhi Zeng · Jan 2026 – Present.</div>
     </div>
 
     <div class="footer">© <span id="year"></span> Zixi Zhou</div>
