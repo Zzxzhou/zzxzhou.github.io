@@ -142,26 +142,32 @@ h2{
 
 /* ===== Dark theme override ===== */
 :root{
-  --text: #f5f5f5;
-  --muted: #b9b9b9;
-  --rule: #2a2a2a;
-  --link: #8ab4ff;
-  --bg: #0b0b0b;
+  --bg:#0f0f10;
+  --panel:#141416;
+  --text:#f2f2f2;      /* 主文字：不是纯白 */
+  --muted:#b7b7b7;
+  --rule:#2a2a2d;      /* 分割线 */
+  --link:#8ab4ff;      /* 链接：浅蓝 */
+  --max: 980px;
 }
 
 body{
   background: var(--bg);
   color: var(--text);
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  line-height: 1.55;
+  font-size: 19px;
 }
 
 /* keep horizontal rules and borders visible on dark background */
-.rule{ border-top-color: var(--rule); }
-.section{ border-top-color: var(--rule); }
-.footer{ border-top-color: var(--rule); }
+.rule{ border:0; border-top:1px solid var(--rule); }
+.footer{ border-top: 1px solid var(--rule); color: var(--muted); }
+.avatar{ border: 1px solid var(--rule); }
 
 /* links */
 a{ color: var(--link); }
 a:hover{ text-decoration: underline; }
+
 
 /* avatar border */
 .avatar{ border-color: var(--rule); }
@@ -174,3 +180,10 @@ a:hover{ text-decoration: underline; }
 /* icons inherit text color */
 .iconlink{ color: var(--link); }
 .icondot{ color: var(--muted); }
+
+.pill{
+  border: 1px solid var(--rule);
+  color: var(--text);
+  background: transparent;
+}
+.pill:hover{ border-color: #3a3a3f; }
