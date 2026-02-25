@@ -139,3 +139,38 @@ h2{
   .intro{ grid-template-columns: 1fr; }
   h1{ font-size: 44px; }
 }
+
+/* ===== Dark theme override ===== */
+:root{
+  --text: #f5f5f5;
+  --muted: #b9b9b9;
+  --rule: #2a2a2a;
+  --link: #8ab4ff;
+  --bg: #0b0b0b;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* keep horizontal rules and borders visible on dark background */
+.rule{ border-top-color: var(--rule); }
+.section{ border-top-color: var(--rule); }
+.footer{ border-top-color: var(--rule); }
+
+/* links */
+a{ color: var(--link); }
+a:hover{ text-decoration: underline; }
+
+/* avatar border */
+.avatar{ border-color: var(--rule); }
+
+/* (optional) make nav slash line look nicer */
+.topnav{ color: var(--muted); }
+.topnav a{ color: var(--link); }
+.topnav a b{ color: var(--text); }
+
+/* icons inherit text color */
+.iconlink{ color: var(--link); }
+.icondot{ color: var(--muted); }
