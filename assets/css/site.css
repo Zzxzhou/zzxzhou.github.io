@@ -8,8 +8,8 @@
 /* ---------- Theme variables (Light = default) ---------- */
 :root{
   /* Backgrounds */
-  --bg: #eeeeee;        /* light gray page background (Princeton-like) */
-  --panel: #ffffff;     /* content panels (optional) */
+  --bg: #f3f1e7;        /* light gray page background (Princeton-like) */
+  --panel: transparent;     /* content panels (optional) */
 
   /* Text */
   --text: #111111;
@@ -78,8 +78,8 @@ a:hover{ text-decoration: underline; }
 /* ---------- Layout for homepage intro ---------- */
 .intro{
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr;
-  gap: 28px;
+  grid-template-columns: 1.55fr 0.45fr;
+  gap: 22px;
   align-items: start;
   padding-bottom: 18px;
 }
@@ -129,10 +129,12 @@ h1{
 /* ---------- Avatar ---------- */
 .avatar{
   width: 100%;
-  max-width: 230px;
+  max-width: 160px;
   border: 1px solid var(--rule);
-  border-radius: 6px;
+  border-radius: 4px;
   object-fit: cover;
+  display: block;
+  margin-left: auto;
 }
 
 /* ---------- Sections ---------- */
