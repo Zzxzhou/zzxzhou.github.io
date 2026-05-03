@@ -8,7 +8,7 @@
 /* ---------- Theme variables (Light = default) ---------- */
 :root{
   /* Backgrounds */
-  --bg: #f2f2f2;        /* light gray page background (Princeton-like) */
+  --bg: #eeeeee;        /* light gray page background (Princeton-like) */
   --panel: #ffffff;     /* content panels (optional) */
 
   /* Text */
