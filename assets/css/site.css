@@ -43,7 +43,7 @@ html, body { margin:0; padding:0; }
 body{
   background: var(--bg);
   color: var(--text);
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.55;
   font-size: 19px;
 }
