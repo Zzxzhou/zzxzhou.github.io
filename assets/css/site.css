@@ -43,7 +43,7 @@ html, body { margin:0; padding:0; }
 body{
   background: var(--bg);
   color: var(--text);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia;
   line-height: 1.55;
   font-size: 19px;
 }
@@ -61,7 +61,7 @@ a:hover{ text-decoration: underline; }
 /* ---------- Top navigation ---------- */
 .topnav{
   padding: 18px 0 10px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia;
   font-size: 22px;
   color: var(--muted);
 }
@@ -113,7 +113,7 @@ h1{
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia;
   font-size: 20px;
   color: var(--link);
 }
@@ -154,14 +154,14 @@ h2{
 .item{ margin: 14px 0; }
 
 .item-title{
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.25;
 }
 
 .item-meta{
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia;
   color: var(--muted);
   margin-top: 2px;
   font-size: 18px;
@@ -174,7 +174,7 @@ h2{
   padding: 16px 0 26px;
   color: var(--muted);
   font-size: 15px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia;
 }
 
 /* ---------- Responsive ---------- */
