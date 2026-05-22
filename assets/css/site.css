@@ -1,184 +1,211 @@
-/* =========================================================
-   Site styles (academic homepage)
-   - Typography: Times New Roman
-   - Default theme: light with Princeton-like light gray bg
-   - Optional dark theme via: html[data-theme="dark"]
-   ========================================================= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@300;400;600;700&display=swap");
 
-/* ---------- Theme variables (Light = default) ---------- */
 :root{
-  /* Backgrounds */
-  --bg: #f3f1e7;        /* light gray page background (Princeton-like) */
-  --panel: transparent;     /* content panels (optional) */
-
-  /* Text */
   --text: #111111;
-  --muted: #444444;
-
-  /* Lines / borders */
-  --rule: #d2d2d2;
-
-  /* Links */
-  --link: #1a4fb3;
-
-  /* Layout */
-  --max: 980px;
+  --muted: #555555;
+  --line: #dddddd;
+  --link: #0a0a5a;
+  --max: 1180px;
 }
 
-/* ---------- Dark theme override (optional) ---------- */
-html[data-theme="dark"]{
-  --bg: #0f0f10;
-  --panel: #141416;
+*{ box-sizing: border-box; }
 
-  --text: #f2f2f2;
-  --muted: #b7b7b7;
-
-  --rule: #2a2a2d;
-  --link: #8ab4ff;
+html, body{
+  margin: 0;
+  padding: 0;
 }
-
-/* ---------- Base ---------- */
-html, body { margin:0; padding:0; }
 
 body{
-  background: var(--bg);
+  background: #ffffff;
   color: var(--text);
-  font-family: Georgia;
-  line-height: 1.55;
-  font-size: 19px;
+  font: 14px/1.5 "Noto Sans", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 
+a{
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.body,
 .container{
   max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 18px;
+  margin: 0 3% 36px;
 }
 
-/* Links */
-a{ color: var(--link); text-decoration: none; }
-a:hover{ text-decoration: underline; }
-
-/* ---------- Top navigation ---------- */
-.topnav{
-  padding: 18px 0 10px;
-  font-family: Georgia;
-  font-size: 22px;
-  color: var(--muted);
-}
-.topnav a{ color: var(--link); }
-.topnav a b{ color: var(--text); font-weight: 700; }
-
-/* Horizontal rule */
-.rule{
-  border:0;
-  border-top:1px solid var(--rule);
-  margin: 0 0 26px;
+.profile-section{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-/* ---------- Layout for homepage intro ---------- */
-.intro{
-  display: grid;
-  grid-template-columns: 1.55fr 0.45fr;
-  gap: 22px;
-  align-items: start;
-  padding-bottom: 18px;
+.profile-image{
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+
+.profile-image img{
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  image-orientation: from-image;
+}
+
+.profile-text{
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 870px;
+}
+
+.profile-text p:first-of-type{
+  margin-top: 8px;
+}
+
+h1,
+h2{
+  font-family: "Montserrat", "Noto Sans", Arial, sans-serif;
+  font-weight: 700;
 }
 
 h1{
-  font-size: 56px;
-  line-height: 1.05;
-  margin: 0 0 8px;
-  font-weight: 700;
-}
-
-.affil{
-  margin: 0 0 18px;
-  color: var(--muted);
-}
-
-/* Key-value row like "Email: ..." */
-.kv{ margin: 10px 0 0; }
-.kv b{ font-weight: 700; }
-
-/* ---------- Icon links (GitHub / CV etc.) ---------- */
-.iconrow{
-  display: flex;
-  gap: 14px;
-  margin-top: 14px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.iconlink{
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: Georgia;
-  font-size: 20px;
-  color: var(--link);
-}
-
-.iconlink svg{
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
-}
-
-.icondot{ color: var(--muted); }
-
-/* ---------- Avatar ---------- */
-.avatar{
-  width: 100%;
-  max-width: 160px;
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  object-fit: cover;
-  display: block;
-  margin-left: auto;
-}
-
-/* ---------- Sections ---------- */
-.section{
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid var(--rule);
+  margin: 0;
+  font-size: 22pt;
+  line-height: 1.2;
 }
 
 h2{
-  font-size: 28px;
-  margin: 0 0 10px;
-  font-weight: 700;
-}
-
-/* ---------- Items (Research / Notes entries) ---------- */
-.item{ margin: 14px 0; }
-
-.item-title{
-  font-family: Georgia;
-  font-weight: 700;
-  font-size: 22px;
+  margin: 0 0 12px;
+  font-size: 1.5em;
   line-height: 1.25;
 }
 
+.no-top-margin{
+  margin-top: 0;
+}
+
+p{
+  margin: 0 0 1em;
+}
+
+.papers-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(340px, 560px));
+  column-gap: 48px;
+  align-items: start;
+  justify-content: start;
+}
+
+.papers-column{
+  min-width: 0;
+}
+
+.paper{
+  margin: 0 0 18px;
+}
+
+.paper-title{
+  margin: 0 0 2px;
+  color: var(--link);
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.paper-authors,
+.paper-date,
+.paper-appended-text,
+.paper-links{
+  margin: 0 0 2px;
+  font-size: 0.95em;
+}
+
+.paper-authors{
+  color: var(--muted);
+}
+
+.paper-links{
+  margin-top: 4px;
+}
+
+.topnav{
+  padding: 18px 0 10px;
+  color: var(--muted);
+}
+
+.topnav a b{
+  color: var(--text);
+  font-weight: 700;
+}
+
+.rule{
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 0 0 24px;
+}
+
+.page-title{
+  margin: 0 0 18px;
+  font-size: 22pt;
+}
+
+.item{
+  max-width: 920px;
+  margin: 0 0 20px;
+}
+
+.item-title{
+  margin: 0 0 2px;
+  color: var(--link);
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.35;
+}
+
 .item-meta{
-  font-family: Georgia;
+  margin: 0 0 8px;
   color: var(--muted);
-  margin-top: 2px;
-  font-size: 18px;
+  font-size: 0.95em;
 }
 
-/* ---------- Footer ---------- */
 .footer{
-  border-top: 1px solid var(--rule);
-  margin-top: 28px;
-  padding: 16px 0 26px;
+  border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 15px;
-  font-family: Georgia;
+  font-size: 0.95em;
+  margin-top: 30px;
+  padding-top: 14px;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 820px){
-  .intro{ grid-template-columns: 1fr; }
-  h1{ font-size: 44px; }
+@media (max-width: 860px){
+  .body,
+  .container{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .profile-section{
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .profile-image{
+    flex: 0 0 auto;
+  }
+
+  .profile-image img{
+    max-width: 250px;
+  }
+
+  .papers-grid{
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+  }
 }
