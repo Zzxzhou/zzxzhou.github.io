@@ -16,7 +16,7 @@ html, body{
 body{
   background: #ffffff;
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Optima, Candara, "Segoe UI", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.55;
@@ -187,9 +187,26 @@ p{
 .footer{
   border-top: 1px solid var(--line);
   color: var(--muted);
+  font-family: Garamond, "Hoefler Text", Georgia, "Times New Roman", serif;
   font-size: 0.95em;
   margin-top: 30px;
   padding-top: 14px;
+}
+
+.footer-quote{
+  font-size: 1.02em;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 920px;
+  padding: 0;
+}
+
+.footer-quote p{
+  margin: 0 0 6px;
+}
+
+.footer-quote cite{
+  font-style: normal;
 }
 
 @media (max-width: 860px){
