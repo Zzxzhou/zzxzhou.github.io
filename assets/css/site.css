@@ -203,6 +203,7 @@ p{
 }
 
 .footer-quote p{
+  font-style: italic;
   margin: 0 0 6px;
 }
 
