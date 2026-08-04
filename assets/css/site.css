@@ -40,7 +40,8 @@ a:hover{
 .body,
 .container{
   max-width: var(--max);
-  margin: 0 3% 36px;
+  width: calc(100% - 48px);
+  margin: 0 auto 36px;
 }
 
 .profile-section{
@@ -212,8 +213,7 @@ p{
 @media (max-width: 860px){
   .body,
   .container{
-    margin-right: 20px;
-    margin-left: 20px;
+    width: calc(100% - 40px);
   }
 
   .profile-section{
