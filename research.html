@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/img/favicon.svg?v=1" type="image/svg+xml" sizes="any" />
   <script src="assets/js/theme.js?v=20260809"></script>
   <link rel="stylesheet" href="https://use.typekit.net/owr1xqw.css" />
-  <link rel="stylesheet" href="assets/css/site.css?v=20260812-adobe-font" />
+  <link rel="stylesheet" href="assets/css/site.css?v=20260817-research" />
 
   <script>
     window.MathJax = {
@@ -39,22 +39,60 @@
 
     <h1 class="page-title">Research</h1>
 
-    <div class="item">
-      <div class="item-title">Panel Quantile Regression with Heterogeneous Slope Coefficients (Work in progress)</div>
-      <div class="item-meta">with Yutao Sun · Nov 2023 – Present. Working paper is coming soon</div>
-      <p>
-        We develop a smoothed panel quantile regression framework with heterogeneous slopes and multi-way fixed effects that accommodates both static and dynamic models. Estimation of individual and time effects induces an incidental-parameter bias, so that the smoothed quantile estimator admits non-negligible $1/T$ and $1/N$ bias components and is not asymptotically centered. Leveraging convolution-based smoothing to obtain differentiable estimating equations, we derive closed-form bias expansions and construct an analytical bias correction that restores centered asymptotic normality for the target parameters. On the computational side, we design dynamic-panel-specific refinements including truncation schemes for dependence control and stabilized score mappings—to enhance robustness and finite-sample performance.
-      </p>
-    </div>
+    <details class="item research-item" id="joint-multitask" name="research-projects">
+      <summary class="research-summary">
+        <span class="research-title">Joint Multitask Learning with Sparse Transfer for Sequential Decisions</span>
+        <span class="research-summary-meta">
+          <span class="research-status">Working Paper</span>
+          <span class="research-toggle-icon" aria-hidden="true"></span>
+        </span>
+      </summary>
+      <div class="research-details">
+        <p class="paper-authors">with <a href="https://kanxu526.github.io/" target="_blank" rel="noopener">Kan Xu</a></p>
+        <p class="research-description">This paper develops a joint estimator for a shared dense component and row-sparse task heterogeneity. It establishes near-minimax rates under collective identification, even when some source tasks are not identified on their own. Sparse target correction yields confidence sets and regret guarantees for sequential decisions.</p>
+      </div>
+    </details>
 
-    <div class="item">
-      <div class="item-title">Socially Salient Signals in Strategic Ranking (Work in progress)</div>
-      <div class="item-meta">with Qinzhi Zeng · Jan 2026 – Present.</div>
-    </div>
+    <details class="item research-item" id="beyond-orthogonality" name="research-projects">
+      <summary class="research-summary">
+        <span class="research-title">Beyond First-Order Orthogonality: Bias from Reused Unit Coordinates</span>
+        <span class="research-summary-meta">
+          <span class="research-status">Working Paper</span>
+          <span class="research-toggle-icon" aria-hidden="true"></span>
+        </span>
+      </summary>
+      <div class="research-details">
+        <p class="research-description">This paper studies semiparametric inference in short panels when estimated unit-level coordinates are reused within clusters. It identifies derivative–influence and curvature biases of order <i>T</i><sup>−1</sup> that remain after first-order orthogonality. A no-splitting correction supports valid √<i>NT</i> inference with growing sieves.</p>
+      </div>
+    </details>
 
-    <div class="item">
-      <div class="item-title">Generated Coordinates in Semiparametric Panel Moments (Work in progress)</div>
-    </div>
+    <details class="item research-item" id="panel-quantile" name="research-projects">
+      <summary class="research-summary">
+        <span class="research-title">Panel Quantile Regression with Heterogeneous Slope Coefficients</span>
+        <span class="research-summary-meta">
+          <span class="research-status">Work in Progress</span>
+          <span class="research-toggle-icon" aria-hidden="true"></span>
+        </span>
+      </summary>
+      <div class="research-details">
+        <p class="paper-authors">with <a href="https://iaer.dufe.edu.cn/content_52323.html" target="_blank" rel="noopener">Yutao Sun</a></p>
+        <p class="research-description">This project develops a smoothed panel quantile framework with heterogeneous slopes and multi-way fixed effects. It derives analytical corrections for incidental-parameter bias in static and dynamic models.</p>
+      </div>
+    </details>
+
+    <details class="item research-item" id="strategic-beliefs" name="research-projects">
+      <summary class="research-summary">
+        <span class="research-title">Strategic Responses to Biased Group Beliefs: Reputation Bias and Self-Confirming Performance Gaps</span>
+        <span class="research-summary-meta">
+          <span class="research-status">Work in Progress</span>
+          <span class="research-toggle-icon" aria-hidden="true"></span>
+        </span>
+      </summary>
+      <div class="research-details">
+        <p class="paper-authors">with Qinzhi Zeng</p>
+        <p class="research-description">This project asks how biased group beliefs shape reputational incentives and when strategic responses can sustain self-confirming performance gaps.</p>
+      </div>
+    </details>
 
     <div class="footer">© <span id="year"></span> Zixi Zhou</div>
   </div>
