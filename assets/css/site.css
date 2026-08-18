@@ -205,14 +205,9 @@ p{
 }
 
 .research-item{
-  border-bottom: 1px solid var(--line);
   margin-bottom: 12px;
   padding-bottom: 12px;
   scroll-margin-top: 20px;
-}
-
-.research-item:last-child{
-  border-bottom: 0;
 }
 
 .research-summary{
