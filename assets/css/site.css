@@ -235,10 +235,23 @@ p{
   outline-offset: 4px;
 }
 
+.research-heading{
+  min-width: 0;
+}
+
 .research-title{
+  display: block;
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1.35;
+}
+
+.research-authors{
+  color: var(--muted);
+  display: block;
+  font-size: 0.86em;
+  line-height: 1.35;
+  margin-top: 2px;
 }
 
 .research-summary-meta{
