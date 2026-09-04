@@ -10,11 +10,11 @@
       font-weight: 400;
     }
   </style>
-  <rect width="64" height="64" rx="14" fill="#173a5e" />
+  <rect width="63" height="63" x="0.5" y="0.5" rx="13.5" fill="#ffffff" stroke="#d8d8d8" />
   <text
     x="32"
     y="32"
-    fill="#ffffff"
+    fill="#000000"
     font-family="Ma Shan Zheng"
     font-size="42"
     font-weight="400"
