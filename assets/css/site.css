@@ -210,26 +210,40 @@ p{
   scroll-margin-top: 20px;
 }
 
-.research-summary{
+.research-header{
   align-items: start;
   color: var(--link);
   column-gap: 14px;
-  cursor: pointer;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  list-style: none;
   padding: 2px 0;
 }
 
-.research-summary::-webkit-details-marker{
+.research-abstract{
+  margin-top: 4px;
+}
+
+.research-abstract-toggle{
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.95em;
+  list-style: none;
+  width: fit-content;
+}
+
+.research-abstract-toggle::-webkit-details-marker{
   display: none;
 }
 
-.research-summary:hover .research-title{
+.research-abstract-label{
+  color: var(--link);
+}
+
+.research-abstract-toggle:hover .research-abstract-label{
   text-decoration: underline;
 }
 
-.research-summary:focus-visible{
+.research-abstract-toggle:focus-visible{
   border-radius: 2px;
   outline: 3px solid var(--link);
   outline-offset: 4px;
@@ -240,10 +254,12 @@ p{
 }
 
 .research-title{
+  color: var(--link);
   display: block;
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1.35;
+  margin: 0;
 }
 
 .research-authors{
@@ -254,36 +270,11 @@ p{
   margin-top: 2px;
 }
 
-.research-summary-meta{
-  align-items: center;
+.research-status{
   color: var(--muted);
-  display: flex;
   font-size: 0.86em;
-  gap: 8px;
   padding-top: 2px;
   white-space: nowrap;
-}
-
-.research-toggle-icon{
-  align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  display: inline-flex;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  height: 1.3rem;
-  justify-content: center;
-  line-height: 1;
-  width: 1.3rem;
-}
-
-.research-toggle-icon::before{
-  content: "+";
-  transform: translateY(-0.04em);
-}
-
-.research-item[open] .research-toggle-icon::before{
-  content: "−";
 }
 
 .research-details{
@@ -417,13 +408,16 @@ p{
 }
 
 @media (max-width: 560px){
-  .research-summary{
+  .research-item{
+    scroll-margin-top: 64px;
+  }
+
+  .research-header{
     grid-template-columns: 1fr;
     row-gap: 4px;
   }
 
-  .research-summary-meta{
-    justify-content: space-between;
+  .research-status{
     padding-top: 0;
   }
 }
