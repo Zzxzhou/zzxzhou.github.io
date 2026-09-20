@@ -235,6 +235,10 @@ p{
   display: none;
 }
 
+.research-paper-link{
+  margin-left: 12px;
+}
+
 .research-abstract-label{
   color: var(--link);
 }
