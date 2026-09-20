@@ -243,7 +243,7 @@ p{
   color: var(--link);
 }
 
-.research-abstract-toggle:hover .research-abstract-label{
+.research-abstract-trigger:hover .research-abstract-label{
   text-decoration: underline;
 }
 
