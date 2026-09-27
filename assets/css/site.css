@@ -94,6 +94,7 @@ a:hover{
   font-size: 0.85rem;
   line-height: 1.4;
   margin-top: 8px;
+  text-align: center;
 }
 
 .profile-text{
@@ -396,6 +397,7 @@ p{
 
   .profile-image{
     flex: 0 0 auto;
+    max-width: 225px;
   }
 
   .profile-image img{
