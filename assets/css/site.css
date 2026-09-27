@@ -76,15 +76,15 @@ a:hover{
 }
 
 .profile-image{
-  flex: 0 0 270px;
+  flex: 0 0 240px;
   margin: 0;
-  max-width: 270px;
+  max-width: 240px;
 }
 
 .profile-image img{
   display: block;
   width: 100%;
-  max-width: 270px;
+  max-width: 240px;
   height: auto;
   image-orientation: from-image;
 }
@@ -403,11 +403,11 @@ p{
 
   .profile-image{
     flex: 0 0 auto;
-    max-width: 225px;
+    max-width: 200px;
   }
 
   .profile-image img{
-    max-width: 225px;
+    max-width: 200px;
   }
 
   .papers-grid{
