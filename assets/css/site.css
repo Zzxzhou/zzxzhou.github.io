@@ -77,6 +77,7 @@ a:hover{
 
 .profile-image{
   flex: 0 0 270px;
+  margin: 0;
   max-width: 270px;
 }
 
@@ -86,6 +87,13 @@ a:hover{
   max-width: 270px;
   height: auto;
   image-orientation: from-image;
+}
+
+.profile-image figcaption{
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 8px;
 }
 
 .profile-text{
