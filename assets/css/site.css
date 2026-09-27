@@ -113,6 +113,12 @@ h2{
   font-weight: 700;
 }
 
+.profile-text h1,
+.papers-column > h2{
+  font-family: inherit;
+  font-weight: 400;
+}
+
 .theme-toggle{
   align-items: center;
   background: var(--control-background);
