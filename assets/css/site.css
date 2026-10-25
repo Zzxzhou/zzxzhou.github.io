@@ -119,6 +119,10 @@ h2{
   font-weight: 400;
 }
 
+.profile-text .profile-name{
+  font-family: "SimSun", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+}
+
 .theme-toggle{
   align-items: center;
   background: var(--control-background);
