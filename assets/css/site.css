@@ -181,14 +181,8 @@ p{
 
 .papers-grid{
   display: grid;
-  grid-template-columns: repeat(2, minmax(360px, 560px));
-  column-gap: 48px;
-  align-items: start;
-  justify-content: start;
-}
-
-.papers-column{
-  min-width: 0;
+  grid-template-columns: minmax(0, 920px);
+  row-gap: 28px;
 }
 
 .paper{
@@ -426,11 +420,6 @@ p{
 
   .profile-image img{
     max-width: 200px;
-  }
-
-  .papers-grid{
-    grid-template-columns: 1fr;
-    row-gap: 28px;
   }
 
   .theme-toggle{
