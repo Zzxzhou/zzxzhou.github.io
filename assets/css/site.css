@@ -72,6 +72,7 @@ a:hover{
 }
 
 .profile-section{
+  container-type: inline-size;
   display: flex;
   flex-wrap: wrap;
   gap: 18px 32px;
@@ -123,10 +124,13 @@ h2{
 .home-section > h2{
   font-family: inherit;
   font-weight: 400;
+  text-align: center;
 }
 
 .profile-text .profile-name{
   font-family: "SimSun", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+  /* Match the page center when the photo and bio share a row. */
+  margin-inline-end: calc(100cqi - 100%);
 }
 
 .theme-toggle{
