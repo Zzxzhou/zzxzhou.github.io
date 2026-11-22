@@ -72,17 +72,16 @@ a:hover{
 }
 
 .profile-section{
-  container-type: inline-size;
   display: flex;
   flex-wrap: wrap;
   gap: 18px 32px;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 30px;
 }
 
 .profile-image{
-  flex: 0 1 216px;
-  margin: 0;
+  flex: 0 1 156px;
+  margin: 0 auto;
   min-width: 0;
 }
 
@@ -102,12 +101,8 @@ a:hover{
 }
 
 .profile-text{
-  flex: 1 1 410px;
+  flex: 1 1 470px;
   min-width: 0;
-}
-
-.profile-text p:first-of-type{
-  margin-top: 8px;
 }
 
 .profile-text p:last-child{
@@ -120,17 +115,15 @@ h2{
   font-weight: 700;
 }
 
-.profile-text h1,
+.profile-name,
 .home-section > h2{
-  font-family: inherit;
   font-weight: 400;
   text-align: center;
 }
 
-.profile-text .profile-name{
+.profile-name{
+  flex: 0 0 100%;
   font-family: "SimSun", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
-  /* Match the page center when the photo and bio share a row. */
-  margin-inline-end: calc(100cqi - 100%);
 }
 
 .theme-toggle{
