@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" />
-  <link rel="stylesheet" href="assets/css/site.css?v=20261121-stacked-sections" />
+  <link rel="stylesheet" href="assets/css/site.css?v=20261121-home-layout" />
 
   <script>
     window.MathJax = {
@@ -33,7 +33,7 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body class="home-page">
   <button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" aria-pressed="false" title="Use dark theme">
     <span class="theme-icon" data-theme-icon aria-hidden="true">☾</span>
   </button>
@@ -59,67 +59,45 @@
       </div>
     </section>
 
-    <section class="papers-grid">
-      <div class="papers-column">
-        <h2 class="no-top-margin">Research</h2>
+    <section class="home-section" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research</h2>
 
-        <article class="paper research-item" id="joint-multitask" aria-labelledby="joint-multitask-title">
-          <div class="research-header">
-            <div class="research-heading">
-              <h3 class="research-title" id="joint-multitask-title">Meta-Learning Representations with Tensor Structure</h3>
-              <span class="research-authors">with <a href="https://kanxu526.github.io/" target="_blank" rel="noopener">Kan Xu</a></span>
-            </div>
-            <span class="research-status">Working Paper</span>
+      <article class="research-item" id="joint-multitask" aria-labelledby="joint-multitask-title">
+        <h3 class="research-title" id="joint-multitask-title">Meta-Learning Representations with Tensor Structure</h3>
+        <p class="paper-meta">with <a href="https://kanxu526.github.io/" target="_blank" rel="noopener">Kan Xu</a> <span aria-hidden="true">·</span> Working Paper</p>
+      </article>
+
+      <article class="research-item" id="beyond-orthogonality" aria-labelledby="beyond-orthogonality-title">
+        <h3 class="research-title" id="beyond-orthogonality-title">Own-Cluster Reuse Bias in Orthogonal Panel Estimation</h3>
+        <p class="paper-meta">Working Paper</p>
+        <details class="research-abstract" name="research-projects">
+          <summary class="research-abstract-toggle" aria-label="Abstract"><span class="research-abstract-trigger"><span aria-hidden="true">[ </span><span class="research-abstract-label">Abstract</span><span aria-hidden="true"> ]</span></span><span class="research-paper-link"><span aria-hidden="true">[ </span><a href="files/Own_Cluster_Reuse_Bias.pdf?v=20261018" target="_blank" rel="noopener" aria-label="Paper: Own-Cluster Reuse Bias in Orthogonal Panel Estimation (PDF, opens in a new tab)">Paper</a><span aria-hidden="true"> ]</span></span></summary>
+          <div class="research-details">
+            <p class="research-description">Estimating a unit coordinate from the same history used to evaluate an orthogonal panel score can create a drift of order $T^{-1}$. This drift can shift the $\sqrt{NT}$ limit when $N/T$ converges to a positive constant. In a partially linear model, we separate derivative–influence covariance, score curvature, and propagation of first-step bias. The last component vanishes as the nuisance sieve grows, while the other two may reinforce or cancel. We estimate the drift from the full unit history and construct valid standard errors under independent units, deterministic quasi-uniform coordinates, finite-range dependence, and tensor-product B-splines. Separate results cover sample means and regular smooth scalar moment coordinates. For a sample mean and a fixed sieve, buffered splitting removes covariance but retains curvature; an equal split doubles its leading coefficient. Simulations show cancellation of substantial bias components and improved coverage after correction.</p>
           </div>
-        </article>
+        </details>
+      </article>
 
-        <article class="paper research-item" id="beyond-orthogonality" aria-labelledby="beyond-orthogonality-title">
-          <div class="research-header">
-            <div class="research-heading">
-              <h3 class="research-title" id="beyond-orthogonality-title">Own-Cluster Reuse Bias in Orthogonal Panel Estimation</h3>
-            </div>
-            <span class="research-status">Working Paper</span>
-          </div>
-          <details class="research-abstract" name="research-projects">
-            <summary class="research-abstract-toggle" aria-label="Abstract"><span class="research-abstract-trigger"><span aria-hidden="true">[ </span><span class="research-abstract-label">Abstract</span><span aria-hidden="true"> ]</span></span><span class="research-paper-link"><span aria-hidden="true">[ </span><a href="files/Own_Cluster_Reuse_Bias.pdf?v=20261018" target="_blank" rel="noopener" aria-label="Paper: Own-Cluster Reuse Bias in Orthogonal Panel Estimation (PDF, opens in a new tab)">Paper</a><span aria-hidden="true"> ]</span></span></summary>
-            <div class="research-details">
-              <p class="research-description">Estimating a unit coordinate from the same history used to evaluate an orthogonal panel score can create a drift of order $T^{-1}$. This drift can shift the $\sqrt{NT}$ limit when $N/T$ converges to a positive constant. In a partially linear model, we separate derivative–influence covariance, score curvature, and propagation of first-step bias. The last component vanishes as the nuisance sieve grows, while the other two may reinforce or cancel. We estimate the drift from the full unit history and construct valid standard errors under independent units, deterministic quasi-uniform coordinates, finite-range dependence, and tensor-product B-splines. Separate results cover sample means and regular smooth scalar moment coordinates. For a sample mean and a fixed sieve, buffered splitting removes covariance but retains curvature; an equal split doubles its leading coefficient. Simulations show cancellation of substantial bias components and improved coverage after correction.</p>
-            </div>
-          </details>
-        </article>
+      <article class="research-item" id="panel-quantile" aria-labelledby="panel-quantile-title">
+        <h3 class="research-title" id="panel-quantile-title">Panel Quantile Regression with Heterogeneous Slope Coefficients</h3>
+        <p class="paper-meta">with <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=0fJOqowAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Yutao Sun</a> <span aria-hidden="true">·</span> Work in Progress</p>
+      </article>
 
-        <article class="paper research-item" id="panel-quantile" aria-labelledby="panel-quantile-title">
-          <div class="research-header">
-            <div class="research-heading">
-              <h3 class="research-title" id="panel-quantile-title">Panel Quantile Regression with Heterogeneous Slope Coefficients</h3>
-              <span class="research-authors">with <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=0fJOqowAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Yutao Sun</a></span>
-            </div>
-            <span class="research-status">Work in Progress</span>
-          </div>
-        </article>
+      <article class="research-item" id="strategic-beliefs" aria-labelledby="strategic-beliefs-title">
+        <h3 class="research-title" id="strategic-beliefs-title">False Group Reputations and Strategic Performance</h3>
+        <p class="paper-meta">with Qinzhi Zeng <span aria-hidden="true">·</span> Work in Progress</p>
+      </article>
+    </section>
 
-        <article class="paper research-item" id="strategic-beliefs" aria-labelledby="strategic-beliefs-title">
-          <div class="research-header">
-            <div class="research-heading">
-              <h3 class="research-title" id="strategic-beliefs-title">False Group Reputations and Strategic Performance</h3>
-              <span class="research-authors">with Qinzhi Zeng</span>
-            </div>
-            <span class="research-status">Work in Progress</span>
-          </div>
-        </article>
-      </div>
+    <section class="home-section" aria-labelledby="notes-heading">
+      <h2 id="notes-heading">Notes</h2>
 
-      <div class="papers-column">
-        <h2 class="no-top-margin">Notes</h2>
-
-        <article class="paper">
-          <p class="paper-title"><a href="files/Probability_Notes.pdf" target="_blank" rel="noopener">Probability Notes</a></p>
-          <p class="paper-authors">Duke Math 641</p>
-          <p class="paper-date">Last updated: 2026-05-03</p>
-          <p class="paper-appended-text">Main reference: Rick Durrett's <cite>Probability: Theory and Examples</cite>, Fifth Edition, chapters 4-7.</p>
-          <p class="paper-links"><a href="notes.html">Notes page</a></p>
-        </article>
-      </div>
+      <article aria-labelledby="probability-notes-title">
+        <h3 class="paper-title" id="probability-notes-title"><a href="files/Probability_Notes.pdf" target="_blank" rel="noopener">Probability Notes</a></h3>
+        <p class="paper-meta">Duke Math 641 <span aria-hidden="true">·</span> Last updated: <time datetime="2026-05-03">2026-05-03</time></p>
+        <p class="paper-appended-text">Main reference: Rick Durrett's <cite>Probability: Theory and Examples</cite>, Fifth Edition, chapters 4-7.</p>
+        <p class="paper-links"><a href="notes.html">Notes page</a></p>
+      </article>
     </section>
 
     <footer class="footer footer-with-portrait">

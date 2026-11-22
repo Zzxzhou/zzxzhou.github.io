@@ -45,6 +45,10 @@ body{
   transition: background-color 180ms ease, color 180ms ease;
 }
 
+.home-page{
+  --max: 920px;
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -69,22 +73,21 @@ a:hover{
 
 .profile-section{
   display: flex;
-  gap: 40px;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 18px 32px;
+  align-items: center;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .profile-image{
-  flex: 0 0 240px;
+  flex: 0 1 216px;
   margin: 0;
-  max-width: 240px;
+  min-width: 0;
 }
 
 .profile-image img{
   display: block;
   width: 100%;
-  max-width: 240px;
   height: auto;
   image-orientation: from-image;
 }
@@ -98,13 +101,16 @@ a:hover{
 }
 
 .profile-text{
-  flex: 1 1 auto;
+  flex: 1 1 410px;
   min-width: 0;
-  max-width: 870px;
 }
 
 .profile-text p:first-of-type{
   margin-top: 8px;
+}
+
+.profile-text p:last-child{
+  margin-bottom: 0;
 }
 
 h1,
@@ -114,7 +120,7 @@ h2{
 }
 
 .profile-text h1,
-.papers-column > h2{
+.home-section > h2{
   font-family: inherit;
   font-weight: 400;
 }
@@ -171,56 +177,42 @@ h2{
   line-height: 1.25;
 }
 
-.no-top-margin{
-  margin-top: 0;
-}
-
 p{
   margin: 0 0 1em;
 }
 
-.papers-grid{
-  display: grid;
-  grid-template-columns: minmax(0, 920px);
-  row-gap: 28px;
+.home-section{
+  border-top: 1px solid var(--line);
+  margin-top: 26px;
+  padding-top: 18px;
 }
 
-.paper{
-  margin: 0 0 18px;
+.paper-meta{
+  color: var(--muted);
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin: 4px 0 0;
 }
 
-.paper-title{
-  margin: 0 0 2px;
-  color: var(--link);
-  font-size: 1.1em;
-  font-weight: 700;
-}
-
-.paper-authors,
-.paper-date,
 .paper-appended-text,
 .paper-links{
-  margin: 0 0 2px;
+  margin: 6px 0 0;
   font-size: 0.95em;
-}
-
-.paper-authors{
-  color: var(--muted);
-}
-
-.paper-date,
-.paper-appended-text{
-  color: var(--text);
-}
-
-.paper-links{
-  margin-top: 4px;
 }
 
 .research-item{
   margin-bottom: 12px;
   padding-bottom: 12px;
   scroll-margin-top: 20px;
+}
+
+.home-section .research-item{
+  margin: 0;
+  padding: 0;
+}
+
+.home-section .research-item + .research-item{
+  margin-top: 20px;
 }
 
 .research-header{
@@ -270,6 +262,7 @@ p{
   min-width: 0;
 }
 
+.paper-title,
 .research-title{
   color: var(--link);
   display: block;
@@ -408,18 +401,7 @@ p{
   }
 
   .profile-section{
-    flex-direction: column;
-    gap: 16px;
     margin-top: 20px;
-  }
-
-  .profile-image{
-    flex: 0 0 auto;
-    max-width: 200px;
-  }
-
-  .profile-image img{
-    max-width: 200px;
   }
 
   .theme-toggle{
